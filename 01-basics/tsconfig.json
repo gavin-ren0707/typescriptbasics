@@ -1,0 +1,8 @@
+/* tsconfig.json */
+{
+  "compilerOptions": {
+    /*  ...  */
+    "strictNullChecks": true,
+    /* ... */
+  }
+}

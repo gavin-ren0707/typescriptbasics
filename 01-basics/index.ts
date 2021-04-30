@@ -1,3 +1,4 @@
+
 // index.ts
 let myName = 'Maxwell';
 let age = 20;
@@ -49,3 +50,26 @@ someone.knows = 'Nothing';
 someone.identity = 'John Snow';
 
 console.log('999',info);
+
+
+let nestedObject = {
+  prop: 'Hello',
+  child: {
+    prop1: 123,
+    prop2: false
+  }
+};
+
+let obj1 = { hello: 'World' };
+let obj2 = { ...obj1, goodbye: 'Cruel World' };
+
+let justAnObject: object = {hello: 'World'};
+justAnObject.hello = 'Max';
+justAnObject.hello = null;
+
+justAnObject = {goodbye: 'Cruel World'};
+
+justAnObject.newProp = 123;
+
+// function
+let aSimpleFunction = function() { console.log('Hi!'); };

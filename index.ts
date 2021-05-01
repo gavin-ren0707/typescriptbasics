@@ -20,13 +20,20 @@ let obj4 = Object.assign(obj3, {
 
 console.log('000',obj4);
 
-let addition = function(param1: any , param2: any){
+let addition = function(param1: number , param2: number) :number{
     return param1+param2;
 }
 
 let shouldBeString: string = addition(123 , 456);
 
 console.log('456',shouldBeString);
+
+//addition.bind = function
+
+
+
+
+
 
 
 

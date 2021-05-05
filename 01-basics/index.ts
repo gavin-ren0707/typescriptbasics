@@ -103,13 +103,11 @@ let objectsArray1 = [
   { message: "Goodbye" }
 ];
 
-
 let objectsArray2 = [
   { message: "Hello" },
-  { message: "Hi",revolt: true },
+  { message: "Hi", revolt: true },
   { message: "Goodbye" }
 ];
-
 
 let objectsArray3 = [
   { message: "Hello" },
@@ -118,10 +116,44 @@ let objectsArray3 = [
 ];
 
 let functionsArray = [
-    function addition(num1: number,num2: number){return num1+num2},
-    function subtraction(num1: number,num2: number){return num1-num2},
-    function multiplication(num1: number,num2: number){return num1*num2},
-    function division(num1: number,num2: number){return num1/num2},
+  function addition(num1: number, num2: number) {
+    return num1 + num2;
+  },
+  function subtraction(num1: number, num2: number) {
+    return num1 - num2;
+  },
+  function multiplication(num1: number, num2: number) {
+    return num1 * num2;
+  },
+  function division(num1: number, num2: number) {
+    return num1 / num2;
+  }
+];
 
-]
+let arraysArray = [
+  [1, 2],
+  ["Hello", "World", "AABAA 叫叫CBA ,到底是ABC還是CBA,筆者忘記了"],
+  [true, false, true, true, false]
+];
+
+let numberss = [1, 2, 3, 4, 5];
+let mappedNumbers = numbers.map(num => num * 2);
+
+// 車型的集合
+// type alias
+type Vehicle = [string, string, string, Date];
+let BMWMotor = <Vehicle>["BMW", "motorcycle", "silver", new Date(2019, 2, 17)];
+let JaguarOffRoad: Vehicle = [
+  "Jaguar",
+  "off-road",
+  "royal-blue",
+  new Date(2019, 1, 9)
+];
+let ToyotaRV: Vehicle = [
+  "Toyota",
+  "recreational",
+  "ivory-white",
+  new Date(2019, 3, 15)
+];
+
 

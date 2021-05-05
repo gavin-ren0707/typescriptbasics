@@ -30,6 +30,11 @@ console.log('456',shouldBeString);
 
 //addition.bind = function
 
+let numbers = [1,2,3,4,5];
+let mappedNumbers = numbers.map(num => num*2);
+
+console.log('100',mappedNumbers);
+
 
 
 

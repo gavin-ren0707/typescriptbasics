@@ -156,4 +156,27 @@ let ToyotaRV: Vehicle = [
   new Date(2019, 3, 15)
 ];
 
+type MathOperator = (n1:number, n2:number) => number;
+
+let powerOp:MathOperator = function(n1:number,n2:number){
+     return n1**n2;
+};
+
+enum Gender {Male, Female, Other};
+
+type AccountInfo = {
+    account: string,
+    password: string;
+    nickname: string | undefined,
+    birth: Date | undefined,
+    gender: Gender | undefined,
+    subscribed: boolean,
+}
+
+let accountMaxwell: AccountInfo = {
+    account: 'nordic.wyvern',
+    password: '<hashed-password>',
+    subscribed: false,
+}
+
 

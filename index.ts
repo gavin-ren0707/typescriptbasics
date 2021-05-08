@@ -43,10 +43,6 @@ let probablyExecutesForever  = function(num:number){
      }
 };
 
-console.log("這些數字",probablyExecutesForever(randomNumber));
-probablyExecutesForever(6);
-probablyExecutesForever(4);
-
 
 
 

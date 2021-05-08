@@ -164,19 +164,48 @@ let powerOp:MathOperator = function(n1:number,n2:number){
 
 enum Gender {Male, Female, Other};
 
-type AccountInfo = {
+type AccountSystem = {
     account: string,
     password: string;
-    nickname: string | undefined,
-    birth: Date | undefined,
-    gender: Gender | undefined,
     subscribed: boolean,
+};
+type AccountPersonalInfo = {
+   nickname?:string,
+   birth?:Date,
+   gender?:Gender
 }
 
-let accountMaxwell: AccountInfo = {
+type PersonalAccount = AccountSystem & AccountPersonalInfo;
+
+
+
+let accountMaxwell: PersonalAccount = {
     account: 'nordic.wyvern',
     password: '<hashed-password>',
+    birth: new Date(2000,1,1),
     subscribed: false,
 }
+
+type SomeoneUnknown = {
+   knows: undefined,
+   identity: null
+}
+
+let anotherSomeone:
+SomeoneUnknown = {}
+
+let executesForever = function forever(){
+     while(true){
+
+     }
+};
+
+const randomNumber = Math.random()*10;
+let probablyExecutesForever  = function(num:number){
+     while(num >5){
+
+     }
+};
+
 
 

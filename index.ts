@@ -36,6 +36,18 @@ let mappedNumbers = numbers.map(num => num*2);
 console.log('100',mappedNumbers);
 
 
+const randomNumber = Math.random()*10;
+let probablyExecutesForever  = function(num:number){
+     while(num >5){
+
+     }
+};
+
+console.log("這些數字",probablyExecutesForever(randomNumber));
+probablyExecutesForever(6);
+probablyExecutesForever(4);
+
+
 
 
 

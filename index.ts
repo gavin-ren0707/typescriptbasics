@@ -43,6 +43,9 @@ let probablyExecutesForever  = function(num:number){
      }
 };
 
+//console.log("這個數字是",probablyExecutesForever(randomNumber));
+//console.log("答案是",probablyExecutesForever(6));
+
 
 
 

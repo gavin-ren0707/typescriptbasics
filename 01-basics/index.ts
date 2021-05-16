@@ -221,3 +221,59 @@ let mustThrowError = function(){
 }
 
 let mustAcceptsNever:number = mustThrowError();
+
+let isAny: any;
+let isUnknown: unknown;
+let isNumber: number;
+let isString: string;
+let isBoolean: boolean;
+let isNull: null;
+let isUndefined: undefined;
+let isAKindOfObjectLiteral: {name:string,age:number};
+let isAKindOfArray: number[];
+let isAKindOfFunction: () => void;
+let isAKindOfObject: object;
+
+isNumber = isUnknown
+if(typeof isUnknown === 'number'){
+     isNumber = isUnknown;
+}
+
+isString = <string>isUnknown;
+isAKindOfArray = isUnknown as number[];
+
+// unknown型態被鎖住
+isAny.KnockKnock;
+isUnknown.Hello;
+
+let unknownObj: unknown = {
+    Hello: 'I like kid',
+    response: function(content:string){ 
+       console.log(content);
+    },
+};
+
+type Unicorn = {
+    Hello:string,
+    response: (content: string) => void
+
+};
+// 沒顯性註記
+unknownObj.Hello;
+unknownObj.response('No more candy mountain1');
+
+// 有顯性註記
+(<Unicorn>unknownObj).Hello;
+(unknownObj as Unicorn).response('No more candy mountain1');
+
+let unknownPrimitive: unknown = '123456789';
+parseInt(unknownPrimitive,10);
+
+// 運用控制流程分析
+if(typeof unknownPrimitive === 'string'){
+   parseInt(unknownPrimitive,10);
+}
+
+type T00 = unknown & null;
+type T87 = unknown | null;
+
